@@ -15,26 +15,316 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
+
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <p>Hello world! This is HTML5 Boilerplate.</p>
+
+    <header class="mainHeader">
+        <nav class="mainNav">
+            <h1 class="logoreplace"><a href="#">GROK</a></h1>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#whoAttends">who attends</a></li>
+                <li><a href="#speakers">speakers</a></li>
+                <li><a href="#schedule">schedule</a></li>
+                <li><a href="#sponsors">sponsors</a></li>
+            </ul>
+        </nav>    
+
+        <img src="images/logo.png" alt="GROK logo">
+        <p class="dateBig">April 30 - May 1, 2015</p>
+        <p class="tagline">A small thing, in a great place, with wonderful people having insightful conversations.</p>
+
+        <div class="tickets wrapper">
+            <p class="price">Tickets: $250</p>
+            <a href="#" class="button">Get yours now</a>
+        </div>
+    </header>
+    <main class="home">
+        <section class="about wrapper" id="about">
+            <h2>GROK is About People</h2>
+            <p>
+                <span class="intro">GROK is a gathering</span> of creative people who want to connect with their peers and discuss the most pressing issues of our day.  It’s a call to Greenville, SC for everyone who is tired of events where attendees sit for hours at a time and listen to speakers on stage.  It’s an event for active learning and sharing.  At GROK, every voice truly matters.  Instead of listening to speakers, GROK is built around group discussions called 10/20s.
+            </p>
+            <div class="Video">
+                <p>video goes here</p>
+            </div>
+            <h3>10/20s</h3>
+            <p>
+                <span class="intro">10/20s are mediated discussions</span> between about a dozen participants. Any participant in a 10/20 can propose a topic for discussion. You can talk about software, your work environment, your personal challenges – anything that’s on your mind. 
+            </p>
+            <p>
+                After 10 minutes of conversation, the session leader can choose to close the topic and ask for another. If the conversation is particularly interesting, the session leader can extend the clock for another 10 minutes, hence the name, “10/20s.”
+            </p>
+        </section>  <!-- end about section -->
+
+        <section class="whoAttends wrapper" id="whoAttends">
+            <h2>Who Attends GROK?</h2>
+
+            <p>
+                <span class="intro">Everyone is welcome</span> at GROK. Most of the attendees are creative professionals - designers, developers, writers, artists, architects, etc. They are freelancers, employees, students, and CEOs. The magic happens because there are so many diverse perspectives in every conversation. We bring in some of the best designers and thinkers in the industry to mediate the 10/20s, so they infuse the discussions with their experience and insight. Whether you're just starting out or internet famous, you can learn a lot from the people you meet at GROK.
+            </p>
+
+            <p class="quote">
+                "Grok flips the whole thing on its head: yes, there are a few presentations, but conversation is the attraction. That format completely overcomes the common complaint that "we could have just seen that presentation at home"." 
+            </p>
+            <p class="attribution">LogosCreative.com/grok14</p>
+
+            <img src="images/grok.jpg" alt="People sitting in a circle talking.">
+
+            <p class="quoteGreen">
+                "Grok was just awesome. I’m inspired and excited about my work and its potential - but that’s normal for right after a conference. Grok is different because it offers information in the context of relationships. I’ve learned real lessons from real people, and these are lessons (and people) I can go back to again and again." 
+            </p>
+            <p class="attribution">Matt McManus</p>
+
+            <p class="quote">
+                "A group may consist of a designer, an entrepreneur, an architect, the CEO of a relatively large successful corporation, and a freelancer trying to decide if she should learn HTML and leave Photoshop behind. No one person has the stage. Everyone's attention is on the person who happens to be speaking."
+            </p>
+            <p class="attribution">Colin Devroe</p>
+            
+            <div class="tickets wrapper">
+                <p class="price">Tickets: $250</p>
+                <a href="#" class="button">Get yours now</a>
+            </div>
+        </section>  <!-- end who attends section -->
+
+        <section class="speakers" id="speakers">
+            <h2>The Speakers</h2>
+            <p class="wrapper">
+                We've brought in a handful of awesome speakers to provide some keynote presentations.
+            </p>
+
+            <section class="speaker">
+                <img src="images/aaronDraplin.jpg" alt="Image of Aaron Draplin">
+                <h3 class="name">Aaron Draplin</h3>
+                <p class="business">Draplin Design</p>
+                <p class="twitter">@draplin</p>
+
+                <p class="biography">
+                    Raised in the Michigan Northwoods, schooled at the Minneapolis College of Art and Design, and currently hunkered down in the mighty Pacific Northwest, the Draplin Design Co. proudly rolls up its sleeves on a number of projects related to the Print, Identity, Web Development, Illustration and Gocco Muscle categories.
+                </p>
+            </section>
+
+            <section class="speaker">
+                <img src="images/carlSmith.jpeg" alt="Image of Carl Smith">
+                <h3 class="name">Carl Smith</h3>
+                <p class="business">nGen Works</p>
+                <p class="twitter">@carlsmith</p>
+
+                <p class="biography">
+                    Owner and founder of nGen Works, Carl’s role is that of an advisor, to nGen and other companies, on how to create self-sustaining teams that perform at the highest levels.
+                </p>
+            </section>
+
+            <section class="speaker">
+                <img src="images/paulRoof.jpg" alt="Image of Dr. Paul Roof">
+                <h3 class="name">Dr. Paul Roof</h3>
+                <p class="business">Holy City Beard &amp; Mustache Society</p>
+
+                <p class="biography">
+                    Paul Roof is an Associate Professor of Sociology at Charleston Southern University and specializes in urban studies and popular culture.  In 2007, while teaching at the College of Charleston, Paul founded the Holy City Beard &amp; Mustache Society. This American Beardsman has had recent beard contest victories and has been featured on Buzzfeed, GQ Magazine, UK Telegraph, Reader’s Digest and Ripley’s Believe It or Not!.
+                </p>
+            </section>
+
+            <section class="speaker">
+                <img src="images/moldover.jpg" alt="Image of the musician, Moldover">
+                <h3 class="name">Moldover</h3>
+                <p class="business">Musician</p>
+                <p class="twitter">@moldover</p>
+
+                <p class="biography">
+                    If technology and music are your life, brace yourself- MOLDOVER is about to reformat your soul. Hailed as "The Godfather of Controllerism", Moldover is a new breed of music icon. Combining the charisma of a rock star, the mad genius of a basement inventor, and the radical inclusiveness of the DIY internet generation, Moldover is "throwing away the rule book and reinventing the wheel" (Remix Magazine). Pick up and play the "LIGHT THEREMIN" packaging of his debut album and understand why the next paradigm for music is a one-man-brand called Moldover.
+                </p>
+            </section> <!-- end speaker Moldover -->
+        </section>  <!-- end speakers section -->
+        
+        <section class="schedule wrapper" id="schedule">
+            <h2>Schedule</h2>
+            <p>
+                <span class="intro">GROK is centered around the people.</span> Most of the time is dedicated to 10/20s. We also have awesome keynote speakers to get the ball rolling, and a full day of 10 minute show and tell presentations on Demo Day. Three jam-packed days of fun with designers, developers, thinkers, good conversation and beer! GROK takes place at the Huguenot Mill and at The Iron Yard's HQ both in Downtown Greenville. Besides the scheduled events, we have some awesome side projects in the works. Previous years have had cooking classes, laser tag, beer brewing classes, and kickball. This year will be just as awesome.
+            </p>
+
+            <section class="scheduleDay">
+                <h3>Wednesday @ Huguenot Mill</h3>
+                <div class="schedItem TIY">
+                    <h4 class="time">9:00 AM</h4>
+                    <p class="title">Opening Remarks</p>
+                    <p class="eventBlurb">The Iron Yard Crew</p>
+                </div>
+
+                <div class="schedItem carlSmith">
+                    <h4 class="time">9:30 AM</h4>
+                    <p class="title">Morning Keynote</p>
+                    <p class="eventBlurb">Carl Smith</p>
+                </div>
+
+                <div class="schedItem tenTwenty">
+                    <h4 class="time">10:30 AM</h4>
+                    <p class="title">10/20s</p>
+                    <p class="eventBlurb">Groups switch each hour</p>
+                </div>
+
+                <div class="schedItem lunch">
+                    <h4 class="time">12:30 PM</h4>
+                    <p class="title">Lunch</p>
+                    <p class="eventBlurb">Provided by somebody great</p>
+                </div>
+
+                <div class="schedItem tenTwenty">
+                    <h4 class="time">1:30 PM</h4>
+                    <p class="title">10/20s</p>
+                    <p class="eventBlurb">Groups switch each hour</p>
+                </div>
+
+
+                <div class="schedItem meetup">
+                    <h4 class="time">6:30 PM</h4>
+                    <p class="title">Opening Night Meetup</p>
+                    <p class="eventBlurb">Location TBD</p>
+                </div>
+
+            </section>  <!-- end of day 1 section -->
+
+            <section class="scheduleDay">
+                <h3>Thursday @ Huguenot Mill</h3>
+                <div class="schedItem aaronDraplin">
+                    <h4 class="time">9:00 AM</h4>
+                    <p class="title">Morning Keynote</p>
+                    <p class="eventBlurb">Aaron Draplin</p>
+                </div>
+
+                <div class="schedItem tenTwenty">
+                    <h4 class="time">10:00 AM</h4>
+                    <p class="title">10/20s</p>
+                    <p class="eventBlurb">Groups switch each hour</p>
+                </div>
+
+                <div class="schedItem lunch">
+                    <h4 class="time">12:00 PM</h4>
+                    <p class="title">lunch</p>
+                    <p class="eventBlurb">Provided by somebody great</p>
+                </div>
+
+                <div class="schedItem tenTwenty">
+                    <h4 class="time">1:00 PM</h4>
+                    <p class="title">10/20s</p>
+                    <p class="eventBlurb">Groups switch each hour</p>
+                </div>
+
+                <div class="schedItem moldover">
+                    <h4 class="time">4:00 PM</h4>
+                    <p class="title">Evening Keynote</p>
+                    <p class="eventBlurb">Moldover</p>
+                </div>
+
+
+                <div class="schedItem meetup">
+                    <h4 class="time">6:30 PM</h4>
+                    <p class="title">Mid Event Meetup</p>
+                    <p class="eventBlurb">Location TBD</p>
+                </div>
+
+            </section>  <!-- end of day 2 section -->
+
+            <section class="scheduleDay">
+                <h3>Friday @ The Iron Yard HQ</h3>
+                <div class="schedItem paulRoof">
+                    <h4 class="time">9:00 AM</h4>
+                    <p class="title">Morning Keynote</p>
+                    <p class="eventBlurb">Dr. Paul Roof</p>
+                </div>
+
+                <div class="schedItem demoDay">
+                    <h4 class="time">10:00 AM</h4>
+                    <p class="title">Demo Day Talks</p>
+                    <p class="eventBlurb">10 minute Show &amp; Tell talks</p>
+                </div>
+
+                <div class="schedItem lunch">
+                    <h4 class="time">12:00 PM</h4>
+                    <p class="title">lunch</p>
+                    <p class="eventBlurb">Provided by somebody great</p>
+                </div>
+
+                <div class="schedItem demoDay">
+                    <h4 class="time">1:00 PM</h4>
+                    <p class="title">Demo Day Talks</p>
+                    <p class="eventBlurb">10 minute Show &amp; Tell talks</p>
+                </div>
+
+                <div class="schedItem meetup">
+                    <h4 class="time">6:00 PM</h4>
+                    <p class="title">Mid Event Meetup</p>
+                    <p class="eventBlurb">Location TBD</p>
+                </div>
+
+            </section>  <!-- end of day 3 section -->
+
+            <section class="socialSignUp">
+                <h3>Get All the Latest News</h3>
+                <p class="socialIcons">twitter facebook</p>
+                <div class="email">
+                    <input type="email" name="email" id="email" placeholder="Yes!  Keep me posted!">
+                    <input type="submit" value="Submit your email address">
+                </div>
+            </section>  <!-- end of social sign up -->
+
+        </section>  <!-- end of schedule section -->
+
+        <section class="sponsors wrapper" id="sponsors">
+            <h2>Thanks to our Sponsors</h2>
+            <p>These sponsors help to make GROK awesome.  We use and love these products.  Please take a moment to check them out.</p>
+
+            <a href="#" class="imgL"><img src="images/mailchimp.png" alt="Mail Chimp Logo"></a>
+
+            <a href="#" class="imgL"><img src="images/mailchimp.png" alt="Square Space Logo"></a>
+
+            <a href="#" class="imgM"><img src="images/mailchimp.png" alt="Worthwhile Logo"></a>
+
+            <a href="#" class="imgM"><img src="images/mailchimp.png" alt="treehouse Logo"></a>
+
+            <a href="#" class="imgM"><img src="images/mailchimp.png" alt="invision Logo"></a>
+
+            <h3>A Presentation of</h3>
+
+            <a href="#" class="imgL"><img src="images/logo-ums.svg" alt="unmatchedstyle Logo"></a>
+
+            <a href="#" class="imgL"><img src="images/tiy-logo.png" alt="The Iron Yard Logo"></a>
+        </section>
+        
+        <div class="lastCall">
+            <img src="images/flyingSaucer.png" alt="Red flying saucer with light beam lowering toward Greenville" class="swoopIn">
+            <a href="http://www.goodreads.com/book/show/350.Stranger_in_a_Strange_Land"><img src="images/human.png" alt="Man being dropped off by spaceship" class="swoopIn"></a>
+            <img src="images/grok.jpg" alt="GROK logo" class="grok">
+            <p class="location">Greenville, SC</p>
+
+            <div class="tickets wrapper">
+                <p class="price">Tickets: $250</p>
+                <a href="#" class="button">Get yours now</a>
+            </div>  <!-- end tickets -->
+
+        </div>   <!-- end last call -->
+    </main>
+    <footer class="mainFooter">
+        <ul>
+            <li>&copy; 2015 GROK</li>
+            <li><a href="#">Terms and Policies</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="mailto:info@unmatchedstyle.com">info@unmatchedstyle.com</a></li>
+        </ul>
+    </footer>
+
+
+
+
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-    </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-Murphy and Grantland, P.A.
+GROK Greenville, SC
 ======================
 
-Demo site for The Iron Yard
+Practice site for The Iron Yard
