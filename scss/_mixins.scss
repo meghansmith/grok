@@ -1,0 +1,12 @@
+@mixin bp($point){
+	@media ('min-width:' + $point){
+		@content; //this takes all the content and dumps it
+	}
+}
+@mixin transition($property, $time, $method){
+	-webkit-transition: $property $time $method;
+	-moz-transition: $property $time $method;
+	-ms-transition: $property $time $method;
+	-o-transition: $property $time $method;
+	transition: $property $time $method;
+}
