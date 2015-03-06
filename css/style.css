@@ -8,11 +8,6 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-html {
-  color: #333;
-  font-size: 1em;
-  line-height: 1.5; }
-
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -28,7 +23,7 @@ html {
   text-shadow: none; }
 
 ::selection {
-  background: #b3d4fc;
+  background: #57AF05;
   text-shadow: none; }
 
 /*
@@ -87,7 +82,8 @@ html {
 body {
   font-size: 16px;
   line-height: 22px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: "Source Sans Pro", sans-serif; }
 
 h1 {
   font-size: 68px;
@@ -100,7 +96,7 @@ h2 {
   line-height: 44px;
   margin-top: 22px;
   margin-bottom: 22px; }
-  @media (min-width: 600px) {
+  @media (min-width: 37.5em) {
     h2 {
       font-size: 42px;
       line-height: 44px;
@@ -111,7 +107,8 @@ h3 {
   font-size: 26px;
   line-height: 44px;
   margin-top: 22px;
-  margin-bottom: 22px; }
+  margin-bottom: 22px;
+  font-weight: 400; }
 
 h4 {
   font-size: 16px;
@@ -122,6 +119,27 @@ h4 {
 p, ul, ol, pre, table, blockquote {
   margin-top: 22px;
   margin-bottom: 22px; }
+
+.button {
+  font-size: 21px;
+  line-height: 44px;
+  border: 4px solid #1a3401;
+  padding: 7px 20px;
+  color: #1a3401;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: -14px; }
+
+.price {
+  font-size: 26px;
+  line-height: 44px;
+  margin: 0;
+  color: #1a3401;
+  font-weight: 600; }
+
+div.tickets {
+  text-align: center; }
 
 /* Sanitation */
 hr {
@@ -142,6 +160,43 @@ sup, sub {
 
 sub {
   top: 0.4em; }
+
+.logoReplace a {
+  display: inline-block;
+  width: 44px;
+  height: 46px;
+  background-size: cover;
+  background-image: url("../images/logo.png");
+  text-indent: -9999px;
+  margin: 0 auto;
+  float: left;
+  padding-bottom: 11px; }
+
+h1.logoReplace {
+  margin: 11px; }
+
+h2, h3 {
+  color: #3d7a04;
+  text-align: center; }
+  @media (min-width: 37.5em) {
+    h2, h3 {
+      text-align: left; } }
+
+.hide {
+  display: none; }
+
+.intro {
+  font-weight: 600; }
+
+img {
+  max-width: 100%; }
+
+.wrapper {
+  width: 96%;
+  margin: 0 auto; }
+
+section {
+  padding-top: 44px; }
 
 /* ==========================================================================
    Helper classes
@@ -278,5 +333,107 @@ sub {
   h2,
   h3 {
     page-break-after: avoid; } }
+header {
+  background-image: url("../images/grok2.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+  header .overlay {
+    background-color: rgba(158, 177, 140, 0.75);
+    padding-bottom: 22px; }
+  header nav {
+    background-color: rgba(158, 177, 140, 0.9);
+    position: fixed;
+    width: 100%;
+    padding-bottom: 11px; }
+  header a.navButton {
+    font-size: 21px;
+    padding: 5px 40px;
+    border: 3px solid #1a3401;
+    float: right;
+    margin-right: 2%;
+    margin-top: 3px;
+    text-transform: uppercase;
+    font-weight: 600; }
+  header ul {
+    display: none;
+    float: right;
+    clear: right;
+    margin-right: 10px;
+    list-style: none;
+    margin-top: 12px;
+    text-align: left; }
+    header ul a {
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding-right: 8px;
+      line-height: 33px;
+      color: #222222; }
+  header img {
+    padding-top: 110px;
+    padding-bottom: 12px; }
+  header p {
+    font-size: 26px;
+    line-height: 44px;
+    margin: 0 auto;
+    color: #1a3401; }
+    header p.dateBig {
+      font-weight: 700;
+      color: #222222;
+      clear: both; }
+  header p.tagline {
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 22px;
+    width: 96%; }
+  header .button {
+    background-color: #d2d9c9; }
+
+div.video {
+  background-color: #9eb18c;
+  height: 176px;
+  width: 288px;
+  display: inline-block;
+  text-align: center; }
+
+.quote, .quoteGreen {
+  font-weight: 300;
+  font-style: italic;
+  color: #3d7a04;
+  border: 2px solid #1a3401;
+  padding: 9px 10px;
+  margin-top: 33px;
+  margin-bottom: 11px; }
+
+.attribution {
+  font-weight: 200;
+  font-size: italic;
+  color: #3d7a04;
+  margin-top: 11px;
+  margin-bottom: 22px; }
+
+.quoteGreen {
+  background-color: #9eb18c;
+  color: #1a3401; }
+
+.whoAttends .image {
+  background-image: url(../images/grok.jpg);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: cover;
+  background-position: right;
+  height: 176px;
+  width: 25%;
+  float: right;
+  margin-left: 3%;
+  margin-top: 29px;
+  margin-right: 2px; }
+  @media (min-width: 26em) {
+    .whoAttends .image {
+      height: 132px; } }
+  @media (min-width: 32.68em) {
+    .whoAttends .image {
+      height: 121px; } }
 
 /*# sourceMappingURL=style.css.map */

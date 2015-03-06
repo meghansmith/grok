@@ -1,0 +1,42 @@
+.quote {
+	font-weight: 300;
+	font-style: italic;
+	color: $bgreen;
+	border: 2px solid $dgreen;
+	padding: 9px 10px;
+	margin-top: 33px;
+	margin-bottom: 11px;
+}
+.attribution {
+	font-weight: 200;
+	font-size: italic;
+	color: $bgreen;
+	margin-top: 11px;
+	margin-bottom: 22px;
+}
+.quoteGreen {
+	@extend .quote;
+	background-color: $lgreen;
+	color: $dgreen;
+
+}
+.whoAttends .image {
+		background-image: url(../images/grok.jpg);
+		background-repeat: no-repeat;
+		background-position: 0;
+		background-size: cover;
+		background-position: right;
+		height: 22*8px;
+		width: 25%;
+		float: right;
+		margin-left: 3%;
+		margin-top: 29px;
+		margin-right: 2px;
+
+		@include bp(26em){
+			height: 22*6px;
+		}
+		@include bp(32.68em){
+			height: 22*5.5px;
+		}
+	}
