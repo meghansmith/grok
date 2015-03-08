@@ -1,0 +1,73 @@
+.scheduleDay h3 {
+	font-size: 16px;
+	font-weight: 900;
+	margin-bottom: 0;
+}
+.schedItem {
+	border: 2px solid $bgreen;
+	margin-bottom: 20px;
+	padding-left: 2%;
+
+
+	.time {
+		margin-top: -2px;
+		text-align: center;
+		font-weight: 900;
+		color: $black;
+		margin-bottom: 0;
+		margin-left: -2%;
+	}
+	.title {
+		font-weight: 900;
+		color: $bgreen;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.eventBlurb {
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+}
+%schedImage{
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.TIY {
+	@extend %schedImage;
+	background-image: url(../images/tiy-logo.png);
+}
+.carlSmith {
+	@extend %schedImage;
+	background-image: url(../images/carlSmith.jpg);
+}
+.tenTwenty {
+	@extend %schedImage;
+	background-image: url(../images/grok.jpg);
+}
+.aaronDraplin {
+	@extend %schedImage;
+	background-image: url(../images/aaronDraplin.jpg);
+}
+.moldover {
+	@extend %schedImage;
+	background-image: url(../images/moldover.jpg);
+}
+.paulRoof {
+	@extend %schedImage;
+	background-image: url(../images/paulRoof.jpg);
+}
+.demoDay {
+	@extend %schedImage;
+	background-image: url(../images/grok2.jpg);
+}
+.lunch {
+	background-image: url(../images/food.jpg);
+	background-size: cover;
+}
+.meetup {
+	background-image: url(../images/meetup.jpg);
+	background-size: cover;
+}

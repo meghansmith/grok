@@ -436,4 +436,91 @@ div.video {
     .whoAttends .image {
       height: 121px; } }
 
+.speakers > p.wrapper {
+  margin-bottom: 88px; }
+
+.speaker {
+  text-align: center;
+  background-color: #89b064;
+  position: relative;
+  padding-top: 121px;
+  margin-top: 110px;
+  padding-bottom: 22px; }
+  .speaker h3 {
+    margin-bottom: -22px;
+    color: #1a3401;
+    margin-top: 11px; }
+  .speaker p.twitter {
+    margin-top: -22px; }
+  .speaker img {
+    max-width: 176px;
+    position: absolute;
+    top: -44px;
+    left: 50%;
+    margin-left: -88px; }
+  .speaker p.biography {
+    text-align: left;
+    width: 96%;
+    margin: auto; }
+
+.scheduleDay h3 {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 0; }
+
+.schedItem {
+  border: 2px solid #3d7a04;
+  margin-bottom: 20px;
+  padding-left: 2%; }
+  .schedItem .time {
+    margin-top: -2px;
+    text-align: center;
+    font-weight: 900;
+    color: #222222;
+    margin-bottom: 0;
+    margin-left: -2%; }
+  .schedItem .title {
+    font-weight: 900;
+    color: #3d7a04;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .schedItem .eventBlurb {
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0; }
+
+.TIY, .carlSmith, .tenTwenty, .aaronDraplin, .moldover, .paulRoof, .demoDay {
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.TIY {
+  background-image: url(../images/tiy-logo.png); }
+
+.carlSmith {
+  background-image: url(../images/carlSmith.jpg); }
+
+.tenTwenty {
+  background-image: url(../images/grok.jpg); }
+
+.aaronDraplin {
+  background-image: url(../images/aaronDraplin.jpg); }
+
+.moldover {
+  background-image: url(../images/moldover.jpg); }
+
+.paulRoof {
+  background-image: url(../images/paulRoof.jpg); }
+
+.demoDay {
+  background-image: url(../images/grok2.jpg); }
+
+.lunch {
+  background-image: url(../images/food.jpg);
+  background-size: cover; }
+
+.meetup {
+  background-image: url(../images/meetup.jpg);
+  background-size: cover; }
+
 /*# sourceMappingURL=style.css.map */

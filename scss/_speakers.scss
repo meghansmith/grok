@@ -1,0 +1,33 @@
+.speakers>p.wrapper {
+	margin-bottom: 88px;
+}
+
+.speaker {
+	text-align: center;
+	background-color: $mgreen;
+	position: relative;
+	padding-top: 121px;
+	margin-top: 110px;
+	padding-bottom: 22px;
+
+	h3{
+		margin-bottom: -22px;
+		color: $dgreen;
+		margin-top: 11px;
+	}
+	p.twitter {
+		margin-top: -22px;
+	}
+	img {
+		max-width: 176px;
+		position: absolute;
+		top: -44px;
+		left: 50%;
+		margin-left: -88px;
+	}
+	p.biography {
+		text-align: left;
+		width: 96%;
+		margin: auto;
+	}
+}
