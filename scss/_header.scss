@@ -4,14 +4,19 @@ header {
 	background-position: center;
 	text-align: center;
 
+	@include bp($small){
+		text-align: left;
+	}
+
 
 	.overlay{
 		background-color: rgba(158,177,140,.75);
 		padding-bottom: 22px;
 	}
 	nav {
-		background-color: rgba(158,177,140, .9);
+		background-color: rgba(158,177,140, .95);
 		position: fixed;
+		z-index: 3;
 		width: 100%;
 		padding-bottom: 11px;
 	}
@@ -24,6 +29,10 @@ header {
 		margin-top: 3px;
 		text-transform: uppercase;
 		font-weight: 600;
+
+		@include bp($small){
+			display: none !important;
+		}
 	}
 	ul {
 
@@ -35,7 +44,11 @@ header {
 		list-style: none;
 		margin-top: 12px;
 		text-align: left;
-
+		
+		@include bp($small){
+			display: block !important;
+			margin: 6px 2% 0 0;
+		}
 		a{
 			font-weight: 700;
 			text-decoration: none;
@@ -43,18 +56,36 @@ header {
 			padding-right: 8px;
 			line-height: 33px;
 			color: $black;
+
+			@include bp($small){
+				padding:10px;
+			}
+		}
+		li {
+			@include bp($small){
+				display: inline-block;
+				padding: 0;
+			}
 		}
 	}
 
 	img{
 		padding-top: 22px * 5;
 		padding-bottom: 12px;
+
+		@include bp($small){
+			margin-left: 2%;
+			padding-bottom: 10px;
+		}
 	}
 	p{
 		font-size: 26px;
 		line-height: 44px;
 		margin:0 auto;
 		color: $dgreen;
+		@include bp($small){
+			margin-left: 2%;
+		}
 		
 
 		&.dateBig{
@@ -69,8 +100,27 @@ header {
 		margin-bottom: 22px;
 		width: 96%;
 
+		@include bp($small){
+			width: 50%;
+		}
+
 	}
+	
+	div.tickets{
+		@include bp($small){
+			text-align: right;
+		}
+	}
+
 	.button{
 		background-color: $buttonGreen;
+		@include bp($small){
+			text-align: center;
+		}
+	}
+	.price {
+		@include bp($small){
+			text-align: center;
+		}
 	}
 }

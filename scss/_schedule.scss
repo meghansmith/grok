@@ -71,3 +71,70 @@
 	background-image: url(../images/meetup.jpg);
 	background-size: cover;
 }
+.socialSignUp {
+	h3 {
+		font-weight: 700;
+	}
+	p {
+		text-align: center;
+	}
+}
+%social {
+    display: inline-block;
+    text-indent: -9999px;
+    background: url(../images/socialSprite.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    transition: all 0s;
+    
+}
+a.facebook{
+    @extend %social;
+    background-position: -40px 0;
+    margin-left: 16px;
+    margin-right: -5px;
+    @include bp($med){
+        &:hover{
+            background-position: -40px -40px;
+        }
+    }
+}
+a.twitter{
+    @extend %social;
+    @include bp($med){
+        &:hover{
+            background-position: 0 -40px;
+        }
+    }
+}
+
+.email {
+	background-color: $lgreen;
+	padding: 11px 4%;
+	text-align: center;
+	input {
+		display: block;
+		width: 100%;
+		max-width: 450px;
+		margin: 11px 0;
+		text-align: center;
+	}
+	input[type=submit]{
+		font-size: 16px;
+		padding: 11px 0;
+		color: $dgreen;
+		border-radius: 0;
+		border-color: $dgreen;
+		background-color: transparent;
+		font-weight: 900;
+	}
+	input[placeholder] {
+		font-size: 20px;
+		font-weight: 200;
+		color: #444;
+		background-color: $tan;
+		border: 2px solid $dgreen;
+		padding: 7px 0;
+	}
+
+}

@@ -1,0 +1,62 @@
+.lastCall {
+	background-image: url(../images/grok3.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	padding-top: 11px;
+	padding-bottom: 80px;
+	height: 595px;
+	text-align: center;
+	margin-bottom: 110px;
+	
+	p.location {
+		margin-top: 0px;
+		font-size: 26px;
+		font-weight: 700;
+	}
+	.dropOff {
+		width: 160px;
+		position: absolute;
+		bottom: 138px;
+		left: 50%;
+		margin-left: -210px;
+
+	
+	}
+	.human {
+		width: 7%;
+		margin-left: 30%;
+		margin-top: -60px;
+	}
+
+	.tickets {
+		position: absolute;
+		bottom: -88px;
+	}
+}
+
+footer {
+	background-color: $lgreen;
+	text-align: center;
+
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		font-size: 12px;
+
+	}
+	a {
+		padding: 11px 10px;
+		display: inline-block;
+		line-height: 0px;
+	}
+	li:first-child {
+		padding-top: 10px;
+	}
+	li:last-child {
+		padding-bottom: 10px;
+	}
+}

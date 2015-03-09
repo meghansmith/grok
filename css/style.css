@@ -96,7 +96,7 @@ h2 {
   line-height: 44px;
   margin-top: 22px;
   margin-bottom: 22px; }
-  @media (min-width: 37.5em) {
+  @media (min-width: 40.625em) {
     h2 {
       font-size: 42px;
       line-height: 44px;
@@ -140,6 +140,10 @@ p, ul, ol, pre, table, blockquote {
 
 div.tickets {
   text-align: center; }
+  @media (min-width: 40.625em) {
+    div.tickets p {
+      width: 160px;
+      display: inline-block; } }
 
 /* Sanitation */
 hr {
@@ -178,7 +182,7 @@ h1.logoReplace {
 h2, h3 {
   color: #3d7a04;
   text-align: center; }
-  @media (min-width: 37.5em) {
+  @media (min-width: 40.625em) {
     h2, h3 {
       text-align: left; } }
 
@@ -197,6 +201,9 @@ img {
 
 section {
   padding-top: 44px; }
+  @media (min-width: 40.625em) {
+    section {
+      padding-top: 0; } }
 
 /* ==========================================================================
    Helper classes
@@ -338,12 +345,16 @@ header {
   background-size: cover;
   background-position: center;
   text-align: center; }
+  @media (min-width: 40.625em) {
+    header {
+      text-align: left; } }
   header .overlay {
     background-color: rgba(158, 177, 140, 0.75);
     padding-bottom: 22px; }
   header nav {
-    background-color: rgba(158, 177, 140, 0.9);
+    background-color: rgba(158, 177, 140, 0.95);
     position: fixed;
+    z-index: 3;
     width: 100%;
     padding-bottom: 11px; }
   header a.navButton {
@@ -355,6 +366,9 @@ header {
     margin-top: 3px;
     text-transform: uppercase;
     font-weight: 600; }
+    @media (min-width: 40.625em) {
+      header a.navButton {
+        display: none !important; } }
   header ul {
     display: none;
     float: right;
@@ -363,6 +377,10 @@ header {
     list-style: none;
     margin-top: 12px;
     text-align: left; }
+    @media (min-width: 40.625em) {
+      header ul {
+        display: block !important;
+        margin: 6px 2% 0 0; } }
     header ul a {
       font-weight: 700;
       text-decoration: none;
@@ -370,14 +388,28 @@ header {
       padding-right: 8px;
       line-height: 33px;
       color: #222222; }
+      @media (min-width: 40.625em) {
+        header ul a {
+          padding: 10px; } }
+    @media (min-width: 40.625em) {
+      header ul li {
+        display: inline-block;
+        padding: 0; } }
   header img {
     padding-top: 110px;
     padding-bottom: 12px; }
+    @media (min-width: 40.625em) {
+      header img {
+        margin-left: 2%;
+        padding-bottom: 10px; } }
   header p {
     font-size: 26px;
     line-height: 44px;
     margin: 0 auto;
     color: #1a3401; }
+    @media (min-width: 40.625em) {
+      header p {
+        margin-left: 2%; } }
     header p.dateBig {
       font-weight: 700;
       color: #222222;
@@ -387,8 +419,20 @@ header {
     font-style: italic;
     margin-bottom: 22px;
     width: 96%; }
+    @media (min-width: 40.625em) {
+      header p.tagline {
+        width: 50%; } }
+  @media (min-width: 40.625em) {
+    header div.tickets {
+      text-align: right; } }
   header .button {
     background-color: #d2d9c9; }
+    @media (min-width: 40.625em) {
+      header .button {
+        text-align: center; } }
+  @media (min-width: 40.625em) {
+    header .price {
+      text-align: center; } }
 
 div.video {
   background-color: #9eb18c;
@@ -396,6 +440,12 @@ div.video {
   width: 288px;
   display: inline-block;
   text-align: center; }
+  @media (min-width: 40.625em) {
+    div.video {
+      width: 46%;
+      float: left;
+      margin-right: 4%;
+      margin-top: 15px; } }
 
 .quote, .quoteGreen {
   font-weight: 300;
@@ -522,5 +572,121 @@ div.video {
 .meetup {
   background-image: url(../images/meetup.jpg);
   background-size: cover; }
+
+.socialSignUp h3 {
+  font-weight: 700; }
+.socialSignUp p {
+  text-align: center; }
+
+a.facebook, a.twitter {
+  display: inline-block;
+  text-indent: -9999px;
+  background: url(../images/socialSprite.png) no-repeat;
+  width: 40px;
+  height: 40px;
+  transition: all 0s; }
+
+a.facebook {
+  background-position: -40px 0;
+  margin-left: 16px;
+  margin-right: -5px; }
+  @media (min-width: 40.625em) {
+    a.facebook:hover {
+      background-position: -40px -40px; } }
+
+@media (min-width: 40.625em) {
+  a.twitter:hover {
+    background-position: 0 -40px; } }
+
+.email {
+  background-color: #9eb18c;
+  padding: 11px 4%;
+  text-align: center; }
+  .email input {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    margin: 11px 0;
+    text-align: center; }
+  .email input[type=submit] {
+    font-size: 16px;
+    padding: 11px 0;
+    color: #1a3401;
+    border-radius: 0;
+    border-color: #1a3401;
+    background-color: transparent;
+    font-weight: 900; }
+  .email input[placeholder] {
+    font-size: 20px;
+    font-weight: 200;
+    color: #444;
+    background-color: #f8f7f4;
+    border: 2px solid #1a3401;
+    padding: 7px 0; }
+
+.sponsors {
+  margin-bottom: 88px; }
+  .sponsors p {
+    color: #3d7a04; }
+  .sponsors .imgM {
+    max-width: 43%;
+    display: inline-block;
+    margin: 11px 3%; }
+  .sponsors .imgL {
+    margin-bottom: 22px;
+    display: inline-block;
+    text-align: center;
+    width: 100%; }
+  .sponsors .imgLast {
+    margin-top: 33px; }
+  .sponsors h3 {
+    font-weight: 700;
+    margin-bottom: 33px; }
+
+.lastCall {
+  background-image: url(../images/grok3.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-top: 11px;
+  padding-bottom: 80px;
+  height: 595px;
+  text-align: center;
+  margin-bottom: 110px; }
+  .lastCall p.location {
+    margin-top: 0px;
+    font-size: 26px;
+    font-weight: 700; }
+  .lastCall .dropOff {
+    width: 160px;
+    position: absolute;
+    bottom: 138px;
+    left: 50%;
+    margin-left: -210px; }
+  .lastCall .human {
+    width: 7%;
+    margin-left: 30%;
+    margin-top: -60px; }
+  .lastCall .tickets {
+    position: absolute;
+    bottom: -88px; }
+
+footer {
+  background-color: #9eb18c;
+  text-align: center; }
+  footer ul {
+    list-style: none;
+    padding: 0; }
+  footer li {
+    display: inline-block;
+    font-size: 12px; }
+  footer a {
+    padding: 11px 10px;
+    display: inline-block;
+    line-height: 0px; }
+  footer li:first-child {
+    padding-top: 10px; }
+  footer li:last-child {
+    padding-bottom: 10px; }
 
 /*# sourceMappingURL=style.css.map */

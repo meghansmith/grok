@@ -4,4 +4,20 @@ div.video {
 	width: 288px;
 	display: inline-block;
 	text-align: center;
+
+	@include bp($small){
+		width: 46%;
+		float: left;
+		margin-right: 4%;
+		margin-top: 15px;
+	}
+}
+
+.summary {
+	@include bp($small){
+		//display: inline-block;
+		//width: 46%;
+		//margin-left: 2%;
+		//margin-right: 2%;
+	}
 }

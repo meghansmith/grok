@@ -161,6 +161,13 @@ p, ul, ol, pre, table, blockquote {
 }
 div.tickets {
     text-align: center;
+
+    @include bp($small){
+        p{
+            width: 160px;
+            display: inline-block;
+        }
+    }
 }
 /* Sanitation */
 hr {
@@ -222,7 +229,12 @@ img {
 }
 section {
     padding-top: 44px;
+
+    @include bp($small){
+        padding-top: 0;
+    }
 }
+
 
 
 
