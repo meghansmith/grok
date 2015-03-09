@@ -32,11 +32,14 @@
 	.tickets {
 		position: absolute;
 		bottom: -88px;
+		width: 220px;
+		left: 50%;
+		margin-left: -110px;
 
 		@include bp($small){
 			bottom: -55px;
-			right: 3%;
-			width: 357px;
+			width: 366px;
+			margin-left: -183px;
 		}
 	}
 
@@ -45,6 +48,7 @@
 footer {
 	background-color: $lgreen;
 	text-align: center;
+	max-width: 1400px;
 
 	ul {
 		list-style: none;

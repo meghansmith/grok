@@ -179,12 +179,9 @@ sub {
   margin: 0 auto;
   float: left;
   padding-bottom: 11px; }
-  @media (min-width: 40.625em) {
-    .logoReplace a {
-      margin-left: 1.8%; } }
 
 h1.logoReplace {
-  margin: 11px; }
+  margin: 11px 0; }
 
 h2, h3 {
   color: #3d7a04;
@@ -207,7 +204,8 @@ img {
   margin: 0 auto; }
   @media (min-width: 40.625em) {
     .wrapper {
-      width: 94%; } }
+      width: 94%;
+      max-width: 1000px; } }
 
 section {
   padding-top: 44px; }
@@ -354,7 +352,9 @@ header {
   background-image: url("../images/grok2.jpg");
   background-size: cover;
   background-position: center;
-  text-align: center; }
+  text-align: center;
+  max-width: 1400px;
+  margin: auto; }
   @media (min-width: 40.625em) {
     header {
       text-align: left; } }
@@ -372,7 +372,7 @@ header {
     padding: 5px 40px;
     border: 3px solid #1a3401;
     float: right;
-    margin-right: 2%;
+    margin-right: 0;
     margin-top: 3px;
     text-transform: uppercase;
     font-weight: 600; }
@@ -390,7 +390,7 @@ header {
     @media (min-width: 40.625em) {
       header ul {
         display: block !important;
-        margin: 6px 2% 0 0; } }
+        margin: 6px 0 0 0; } }
     header ul a {
       font-weight: 700;
       text-decoration: none;
@@ -408,17 +408,11 @@ header {
   header img {
     padding-top: 110px;
     padding-bottom: 12px; }
-    @media (min-width: 40.625em) {
-      header img {
-        margin-left: 3%; } }
   header p {
     font-size: 26px;
     line-height: 44px;
     margin: 0 auto;
     color: #1a3401; }
-    @media (min-width: 40.625em) {
-      header p {
-        margin-left: 3%; } }
     header p.dateBig {
       font-weight: 700;
       color: #222222;
@@ -430,7 +424,8 @@ header {
     width: 96%; }
     @media (min-width: 40.625em) {
       header p.tagline {
-        width: 50%; } }
+        width: 50%;
+        margin-left: 0; } }
   @media (min-width: 40.625em) {
     header div.tickets {
       text-align: right; } }
@@ -812,16 +807,20 @@ a.facebook {
     margin-top: -60px; }
   .lastCall .tickets {
     position: absolute;
-    bottom: -88px; }
+    bottom: -88px;
+    width: 220px;
+    left: 50%;
+    margin-left: -110px; }
     @media (min-width: 40.625em) {
       .lastCall .tickets {
         bottom: -55px;
-        right: 3%;
-        width: 357px; } }
+        width: 366px;
+        margin-left: -183px; } }
 
 footer {
   background-color: #9eb18c;
-  text-align: center; }
+  text-align: center;
+  max-width: 1400px; }
   footer ul {
     list-style: none;
     padding: 0; }
