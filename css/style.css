@@ -732,20 +732,38 @@ a.facebook {
   margin-bottom: 88px; }
   .sponsors p {
     color: #3d7a04; }
+    @media (min-width: 40.625em) {
+      .sponsors p {
+        width: 50%;
+        margin-left: 0; } }
   .sponsors .imgM {
     max-width: 43%;
     display: inline-block;
-    margin: 11px 3%; }
+    margin: 22px 3%; }
+    @media (min-width: 40.625em) {
+      .sponsors .imgM {
+        width: 26%; } }
   .sponsors .imgL {
     margin-bottom: 22px;
     display: inline-block;
     text-align: center;
     width: 100%; }
+    @media (min-width: 40.625em) {
+      .sponsors .imgL {
+        width: 43%;
+        margin: 22px 3%; } }
   .sponsors .imgLast {
     margin-top: 33px; }
+    @media (min-width: 40.625em) {
+      .sponsors .imgLast {
+        margin-top: 0; } }
   .sponsors h3 {
     font-weight: 700;
     margin-bottom: 33px; }
+    @media (min-width: 40.625em) {
+      .sponsors h3 {
+        margin-bottom: 11px;
+        margin-top: 33px; } }
 
 .lastCall {
   background-image: url(../images/grok3.jpg);
@@ -774,6 +792,11 @@ a.facebook {
   .lastCall .tickets {
     position: absolute;
     bottom: -88px; }
+    @media (min-width: 40.625em) {
+      .lastCall .tickets {
+        bottom: -55px;
+        right: 3%;
+        width: 357px; } }
 
 footer {
   background-color: #9eb18c;

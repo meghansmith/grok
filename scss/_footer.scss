@@ -32,7 +32,14 @@
 	.tickets {
 		position: absolute;
 		bottom: -88px;
+
+		@include bp($small){
+			bottom: -55px;
+			right: 3%;
+			width: 357px;
+		}
 	}
+
 }
 
 footer {

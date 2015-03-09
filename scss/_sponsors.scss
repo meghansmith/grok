@@ -2,25 +2,47 @@
 	margin-bottom: 88px;
 	p {
 		color: $bgreen;
+		@include bp($small){
+			width: 50%;
+			margin-left: 0;
+		}
 	}
 	.imgM {
 		max-width: 43%;
 		display: inline-block;
-		margin: 11px 3%;
+		margin: 22px 3%;
+
+		@include bp($small){
+			width: 26%;
+		}
 	}
 	.imgL {
 		margin-bottom: 22px;
 		display: inline-block;
 		text-align: center;
 		width: 100%;
+
+		@include bp($small){
+			width: 43%;
+			margin: 22px 3%;
+		}
 	}
 	.imgLast {
 		margin-top: 33px;
+
+		@include bp($small){
+			margin-top: 0;
+		}
 	}
 
 	h3 {
 		font-weight: 700;
 		margin-bottom: 33px;
+
+		@include bp($small){
+			margin-bottom: 11px;
+			margin-top: 33px;
+		}
 	}
 
 }
