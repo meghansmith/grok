@@ -1,7 +1,38 @@
+.schedule {
+	position: relative;
+}
+.schedule>p{
+
+	@include bp($small){
+		width: 47%;
+		margin-right: 2%;
+		display: inline-block;
+	}
+}
+
 .scheduleDay h3 {
 	font-size: 16px;
 	font-weight: 900;
 	margin-bottom: 0;
+}
+
+.scheduleDay {
+	@include bp($small){
+		width: 45%;
+		margin-right: 2%;
+		margin-left: 2%;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+.firstDay {
+	@include bp($small){
+		margin-top: -44px;
+		margin-bottom: 88px;
+	}
+	@include bp(807px){
+		margin-bottom: 66px;
+	}
 }
 .schedItem {
 	border: 2px solid $bgreen;
@@ -78,6 +109,16 @@
 	p {
 		text-align: center;
 	}
+
+	@include bp($small){
+		width: 47%;
+		position: absolute;
+		bottom: 22px * 27;
+	}
+	@include bp(673px){
+		bottom: 22px*28;
+	}
+
 }
 %social {
     display: inline-block;

@@ -141,9 +141,13 @@ p, ul, ol, pre, table, blockquote {
 div.tickets {
   text-align: center; }
   @media (min-width: 40.625em) {
-    div.tickets p {
-      width: 160px;
-      display: inline-block; } }
+    div.tickets {
+      margin-bottom: -2px;
+      text-align: left; }
+      div.tickets p {
+        width: 150px;
+        display: inline-block;
+        text-align: left; } }
 
 /* Sanitation */
 hr {
@@ -175,6 +179,9 @@ sub {
   margin: 0 auto;
   float: left;
   padding-bottom: 11px; }
+  @media (min-width: 40.625em) {
+    .logoReplace a {
+      margin-left: 1.8%; } }
 
 h1.logoReplace {
   margin: 11px; }
@@ -198,6 +205,9 @@ img {
 .wrapper {
   width: 96%;
   margin: 0 auto; }
+  @media (min-width: 40.625em) {
+    .wrapper {
+      width: 94%; } }
 
 section {
   padding-top: 44px; }
@@ -400,8 +410,7 @@ header {
     padding-bottom: 12px; }
     @media (min-width: 40.625em) {
       header img {
-        margin-left: 2%;
-        padding-bottom: 10px; } }
+        margin-left: 3%; } }
   header p {
     font-size: 26px;
     line-height: 44px;
@@ -409,7 +418,7 @@ header {
     color: #1a3401; }
     @media (min-width: 40.625em) {
       header p {
-        margin-left: 2%; } }
+        margin-left: 3%; } }
     header p.dateBig {
       font-weight: 700;
       color: #222222;
@@ -456,7 +465,7 @@ div.video {
   margin-top: 33px;
   margin-bottom: 11px; }
 
-.attribution {
+.attribution, .attribution2 {
   font-weight: 200;
   font-size: italic;
   color: #3d7a04;
@@ -485,9 +494,58 @@ div.video {
   @media (min-width: 32.68em) {
     .whoAttends .image {
       height: 121px; } }
+  @media (min-width: 600px) {
+    .whoAttends .image {
+      height: 99px; } }
+  @media (min-width: 40.625em) {
+    .whoAttends .image {
+      width: 48%;
+      height: 154px;
+      margin-top: -66px; } }
+  @media (min-width: 825px) {
+    .whoAttends .image {
+      margin-top: -22px; } }
 
-.speakers > p.wrapper {
+@media (min-width: 40.625em) {
+  .whoIntro {
+    width: 48%;
+    float: left;
+    margin-right: 4%; } }
+
+@media (min-width: 40.625em) {
+  .wholeQuote {
+    display: inline-block;
+    width: 46%; } }
+
+@media (min-width: 40.625em) {
+  .lastQuote {
+    float: right;
+    margin-top: -198px; } }
+@media (min-width: 825px) {
+  .lastQuote {
+    margin-top: -110px; } }
+
+@media (min-width: 40.625em) {
+  .whoAttends .tickets {
+    clear: both;
+    margin: 0;
+    padding-top: 20px; } }
+@media (min-width: 825px) {
+  .whoAttends .tickets {
+    clear: none;
+    margin-top: 42px;
+    padding-top: 0; } }
+
+.speakers > p {
   margin-bottom: 88px; }
+  @media (min-width: 40.625em) {
+    .speakers > p {
+      width: 50%;
+      margin-bottom: 0; } }
+
+@media (min-width: 40.625em) {
+  .speakers {
+    margin-top: 66px; } }
 
 .speaker {
   text-align: center;
@@ -496,10 +554,20 @@ div.video {
   padding-top: 121px;
   margin-top: 110px;
   padding-bottom: 22px; }
+  @media (min-width: 40.625em) {
+    .speaker {
+      width: 45%;
+      display: inline-block;
+      margin-right: 2%;
+      margin-left: 2%;
+      vertical-align: top; } }
   .speaker h3 {
     margin-bottom: -22px;
     color: #1a3401;
     margin-top: 11px; }
+    @media (min-width: 40.625em) {
+      .speaker h3 {
+        text-align: center; } }
   .speaker p.twitter {
     margin-top: -22px; }
   .speaker img {
@@ -512,11 +580,39 @@ div.video {
     text-align: left;
     width: 96%;
     margin: auto; }
+    @media (min-width: 40.625em) {
+      .speaker p.biography {
+        width: 90%; } }
+
+.schedule {
+  position: relative; }
+
+@media (min-width: 40.625em) {
+  .schedule > p {
+    width: 47%;
+    margin-right: 2%;
+    display: inline-block; } }
 
 .scheduleDay h3 {
   font-size: 16px;
   font-weight: 900;
   margin-bottom: 0; }
+
+@media (min-width: 40.625em) {
+  .scheduleDay {
+    width: 45%;
+    margin-right: 2%;
+    margin-left: 2%;
+    display: inline-block;
+    vertical-align: top; } }
+
+@media (min-width: 40.625em) {
+  .firstDay {
+    margin-top: -44px;
+    margin-bottom: 88px; } }
+@media (min-width: 807px) {
+  .firstDay {
+    margin-bottom: 66px; } }
 
 .schedItem {
   border: 2px solid #3d7a04;
@@ -577,6 +673,14 @@ div.video {
   font-weight: 700; }
 .socialSignUp p {
   text-align: center; }
+@media (min-width: 40.625em) {
+  .socialSignUp {
+    width: 47%;
+    position: absolute;
+    bottom: 594px; } }
+@media (min-width: 673px) {
+  .socialSignUp {
+    bottom: 616px; } }
 
 a.facebook, a.twitter {
   display: inline-block;

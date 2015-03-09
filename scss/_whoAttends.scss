@@ -6,6 +6,8 @@
 	padding: 9px 10px;
 	margin-top: 33px;
 	margin-bottom: 11px;
+
+	
 }
 .attribution {
 	font-weight: 200;
@@ -14,29 +16,87 @@
 	margin-top: 11px;
 	margin-bottom: 22px;
 }
+.attribution2{
+	@extend .attribution;
+	
+}
 .quoteGreen {
 	@extend .quote;
 	background-color: $lgreen;
 	color: $dgreen;
 
 }
-.whoAttends .image {
-		background-image: url(../images/grok.jpg);
-		background-repeat: no-repeat;
-		background-position: 0;
-		background-size: cover;
-		background-position: right;
-		height: 22*8px;
-		width: 25%;
-		float: right;
-		margin-left: 3%;
-		margin-top: 29px;
-		margin-right: 2px;
 
-		@include bp(26em){
-			height: 22*6px;
+
+.whoAttends .image {
+	background-image: url(../images/grok.jpg);
+	background-repeat: no-repeat;
+	background-position: 0;
+	background-size: cover;
+	background-position: right;
+	height: 22*8px;
+	width: 25%;
+	float: right;
+	margin-left: 3%;
+	margin-top: 29px;
+	margin-right: 2px;
+
+	@include bp(26em){
+		height: 22*6px;
+	}
+	@include bp(32.68em){
+		height: 22*5.5px;
+	}
+	@include bp(600px) {
+		height: 22*4.5px;
+	}
+
+	@include bp($small){
+		width: 48%;
+		height: 22*7px;
+		margin-top: -66px;
+	}
+	@include bp(825px){
+		margin-top: -22px;
+	}
+}
+.whoIntro {
+	@include bp($small){
+		width: 48%;
+		float: left;
+		margin-right: 4%;
+	}
+}
+
+.wholeQuote{
+	@include bp($small){
+		display: inline-block;
+		width: 46%;
+	}
+}
+
+.lastQuote{
+	@include bp($small){
+		float: right;
+		margin-top: -22px * 9;
+	}
+
+	@include bp(825px){
+		margin-top: -22px * 5;
+	}
+}
+.whoAttends{
+	.tickets{
+		@include bp($small){
+			clear:both;
+			margin: 0;
+			padding-top: 20px;
 		}
-		@include bp(32.68em){
-			height: 22*5.5px;
+
+		@include bp(825px){
+			clear: none;
+			margin-top: 42px;
+			padding-top: 0;
 		}
 	}
+}

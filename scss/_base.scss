@@ -163,9 +163,12 @@ div.tickets {
     text-align: center;
 
     @include bp($small){
+        margin-bottom: -2px;
+        text-align: left;
         p{
-            width: 160px;
+            width: 150px;
             display: inline-block;
+            text-align: left;
         }
     }
 }
@@ -201,6 +204,10 @@ sub {
     margin: 0 auto;
     float: left;
     padding-bottom: 11px;
+
+    @include bp($small){
+        margin-left: 1.8%;
+    }
 }
 h1.logoReplace {
     margin: 11px;
@@ -226,6 +233,10 @@ img {
 .wrapper {
     width: 96%;
     margin: 0 auto;
+
+    @include bp($small){
+        width: 94%;
+    }
 }
 section {
     padding-top: 44px;
