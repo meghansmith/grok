@@ -1,3 +1,15 @@
+section.about {
+	position: relative;
+
+
+	h3{
+		@include bp($small){
+			margin-top: 44px;
+			margin-bottom: 0;
+		}
+	}
+}
+
 div.video {
 	background-color: $lgreen;
 	height: 176px;
@@ -7,17 +19,30 @@ div.video {
 
 	@include bp($small){
 		width: 46%;
-		float: left;
-		margin-right: 4%;
-		margin-top: 15px;
+		position: absolute;
+		right: 0;
+		top: 88px;
 	}
 }
 
 .summary {
 	@include bp($small){
-		//display: inline-block;
-		//width: 46%;
-		//margin-left: 2%;
-		//margin-right: 2%;
+		width: 46%;
+		margin-left: 0;
 	}
+}
+
+p.about{
+	@include bp($small){
+		width: 46%;
+		display: inline-block;
+	}
+}
+p.aboutFirst{
+	@extend p.about;
+	
+	@include bp($small){
+		margin-right: 4%;
+	}
+
 }

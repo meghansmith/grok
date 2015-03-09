@@ -443,6 +443,13 @@ header {
     header .price {
       text-align: center; } }
 
+section.about {
+  position: relative; }
+  @media (min-width: 40.625em) {
+    section.about h3 {
+      margin-top: 44px;
+      margin-bottom: 0; } }
+
 div.video {
   background-color: #9eb18c;
   height: 176px;
@@ -452,9 +459,23 @@ div.video {
   @media (min-width: 40.625em) {
     div.video {
       width: 46%;
-      float: left;
-      margin-right: 4%;
-      margin-top: 15px; } }
+      position: absolute;
+      right: 0;
+      top: 88px; } }
+
+@media (min-width: 40.625em) {
+  .summary {
+    width: 46%;
+    margin-left: 0; } }
+
+@media (min-width: 40.625em) {
+  p.about, p.aboutFirst {
+    width: 46%;
+    display: inline-block; } }
+
+@media (min-width: 40.625em) {
+  p.aboutFirst {
+    margin-right: 4%; } }
 
 .quote, .quoteGreen {
   font-weight: 300;
