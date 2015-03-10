@@ -86,6 +86,11 @@
 	}
 }
 .whoAttends{
+	position: relative;
+	z-index: -1;
+	margin-top: -50px;
+	padding-top: 50px;
+
 	.tickets{
 		@include bp($small){
 			clear:both;

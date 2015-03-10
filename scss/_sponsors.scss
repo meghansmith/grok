@@ -1,5 +1,9 @@
 .sponsors {
+	position: relative;
 	margin-bottom: 88px;
+	z-index: -1;
+	margin-top: -50px;
+	padding-top: 50px;
 	p {
 		color: $bgreen;
 		@include bp($small){

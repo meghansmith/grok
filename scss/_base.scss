@@ -149,6 +149,14 @@ p, ul, ol, pre, table, blockquote {
     text-transform: uppercase;
     font-weight: 700;
     margin-top: -14px;
+    transition: all .3s ease;
+
+    @include bp(1025px){
+        &:hover{
+            color: $tan;
+            background-color: $dgreen;
+        }
+    }
  }
 
 .price {

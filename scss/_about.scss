@@ -1,6 +1,8 @@
 section.about {
 	position: relative;
-
+	z-index: -1;
+	margin-top: -50px;
+	padding-top: 50px;
 
 	h3{
 		@include bp($small){
@@ -11,17 +13,14 @@ section.about {
 }
 
 div.video {
-	background-color: $lgreen;
-	height: 176px;
-	width: 288px;
-	display: inline-block;
 	text-align: center;
-
+	margin-top: 44px;
 	@include bp($small){
 		width: 46%;
+		margin-top: 0;
 		position: absolute;
 		right: 0;
-		top: 88px;
+		top: 168px;
 	}
 }
 

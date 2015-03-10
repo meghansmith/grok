@@ -129,7 +129,12 @@ p, ul, ol, pre, table, blockquote {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-  margin-top: -14px; }
+  margin-top: -14px;
+  transition: all .3s ease; }
+  @media (min-width: 1025px) {
+    .button:hover {
+      color: #f8f7f4;
+      background-color: #1a3401; } }
 
 .price {
   font-size: 26px;
@@ -380,13 +385,13 @@ header {
       header a.navButton {
         display: none !important; } }
   header ul {
-    display: none;
     float: right;
     clear: right;
     margin-right: 10px;
     list-style: none;
     margin-top: 12px;
-    text-align: left; }
+    text-align: left;
+    margin-bottom: 0px; }
     @media (min-width: 40.625em) {
       header ul {
         display: block !important;
@@ -439,24 +444,25 @@ header {
       text-align: center; } }
 
 section.about {
-  position: relative; }
+  position: relative;
+  z-index: -1;
+  margin-top: -50px;
+  padding-top: 50px; }
   @media (min-width: 40.625em) {
     section.about h3 {
       margin-top: 44px;
       margin-bottom: 0; } }
 
 div.video {
-  background-color: #9eb18c;
-  height: 176px;
-  width: 288px;
-  display: inline-block;
-  text-align: center; }
+  text-align: center;
+  margin-top: 44px; }
   @media (min-width: 40.625em) {
     div.video {
       width: 46%;
+      margin-top: 0;
       position: absolute;
       right: 0;
-      top: 88px; } }
+      top: 168px; } }
 
 @media (min-width: 40.625em) {
   .summary {
@@ -541,16 +547,21 @@ div.video {
   .lastQuote {
     margin-top: -110px; } }
 
-@media (min-width: 40.625em) {
-  .whoAttends .tickets {
-    clear: both;
-    margin: 0;
-    padding-top: 20px; } }
-@media (min-width: 825px) {
-  .whoAttends .tickets {
-    clear: none;
-    margin-top: 42px;
-    padding-top: 0; } }
+.whoAttends {
+  position: relative;
+  z-index: -1;
+  margin-top: -50px;
+  padding-top: 50px; }
+  @media (min-width: 40.625em) {
+    .whoAttends .tickets {
+      clear: both;
+      margin: 0;
+      padding-top: 20px; } }
+  @media (min-width: 825px) {
+    .whoAttends .tickets {
+      clear: none;
+      margin-top: 42px;
+      padding-top: 0; } }
 
 .speakers > p {
   margin-bottom: 88px; }
@@ -559,9 +570,13 @@ div.video {
       width: 50%;
       margin-bottom: 0; } }
 
-@media (min-width: 40.625em) {
-  .speakers {
-    margin-top: 66px; } }
+.speakers {
+  z-index: -1;
+  margin-top: -50px;
+  padding-top: 50px; }
+  @media (min-width: 40.625em) {
+    .speakers h2 {
+      margin-top: 66px; } }
 
 .speaker {
   text-align: center;
@@ -601,7 +616,10 @@ div.video {
         width: 90%; } }
 
 .schedule {
-  position: relative; }
+  position: relative;
+  z-index: -1;
+  margin-top: -50px;
+  padding-top: 50px; }
 
 @media (min-width: 40.625em) {
   .schedule > p {
@@ -745,7 +763,11 @@ a.facebook {
     padding: 7px 0; }
 
 .sponsors {
-  margin-bottom: 88px; }
+  position: relative;
+  margin-bottom: 88px;
+  z-index: -1;
+  margin-top: -50px;
+  padding-top: 50px; }
   .sponsors p {
     color: #3d7a04; }
     @media (min-width: 40.625em) {

@@ -37,15 +37,13 @@ header {
 		}
 	}
 	ul {
-
-		display: none; //remove this once .js is hooked up
-
 		float: right;
 		clear: right;
 		margin-right: 10px;	
 		list-style: none;
 		margin-top: 12px;
 		text-align: left;
+		margin-bottom: 0px;
 		
 		@include bp($small){
 			display: block !important;
