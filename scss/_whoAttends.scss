@@ -96,6 +96,8 @@
 	padding-top: 50px;
 
 	.tickets{
+		position: relative;
+		z-index: 10;
 		@include bp($small){
 			clear:both;
 			margin: 0;
@@ -108,4 +110,5 @@
 			padding-top: 0;
 		}
 	}
+
 }

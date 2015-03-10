@@ -32,7 +32,7 @@ $(document).ready(function(){
 			$wnHeight   = $window.height(),
 			$val        = $lCtop - $wscrollTop - $wnHeight;
 
-			console.log ($val);
+			//console.log ($val);
 
 		if( $val < -10 ){
 			$dropOff.css( { 'top' : $val * -0.43 + 'px' } );

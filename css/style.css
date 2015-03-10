@@ -563,16 +563,19 @@ div.video {
   z-index: -1;
   margin-top: -50px;
   padding-top: 50px; }
-  @media (min-width: 40.625em) {
-    .whoAttends .tickets {
-      clear: both;
-      margin: 0;
-      padding-top: 20px; } }
-  @media (min-width: 825px) {
-    .whoAttends .tickets {
-      clear: none;
-      margin-top: 42px;
-      padding-top: 0; } }
+  .whoAttends .tickets {
+    position: relative;
+    z-index: 10; }
+    @media (min-width: 40.625em) {
+      .whoAttends .tickets {
+        clear: both;
+        margin: 0;
+        padding-top: 20px; } }
+    @media (min-width: 825px) {
+      .whoAttends .tickets {
+        clear: none;
+        margin-top: 42px;
+        padding-top: 0; } }
 
 .speakers > p {
   margin-bottom: 88px; }
@@ -582,7 +585,7 @@ div.video {
       margin-bottom: 0; } }
 
 .speakers {
-  z-index: -1;
+  z-index: -10;
   margin-top: -50px;
   padding-top: 50px; }
   @media (min-width: 40.625em) {
