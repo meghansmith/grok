@@ -41,20 +41,6 @@ $(document).ready(function(){
 
 
 
-	// $(".menuHide").find('a').click( function( event ){
-
-	// 	var $this = $( this ).attr( "href" );
-
-	// 	console.log( $this );
-
-	//    $('html, body').animate({
-	//        scrollTop: $( $this ).offset().top
-	//    }, 500);
-
-	//    $(".menuHide").slideToggle('fast');
-
-	//    event.preventDefault();
-	// });
 
 
 	
