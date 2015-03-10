@@ -5,9 +5,14 @@ section.about {
 	padding-top: 50px;
 
 	h3{
+		margin-top: 33px;
+
 		@include bp($small){
-			margin-top: 44px;
+			margin-top: 0px;
 			margin-bottom: 0;
+		}
+		@include bp(912px){
+			margin-top: -39px;
 		}
 	}
 }
@@ -15,12 +20,11 @@ section.about {
 div.video {
 	text-align: center;
 	margin-top: 44px;
+	vertical-align: top;
 	@include bp($small){
 		width: 46%;
-		margin-top: 0;
-		position: absolute;
-		right: 0;
-		top: 168px;
+		margin-top: 28px;
+		display: inline-block;
 	}
 }
 
@@ -28,6 +32,8 @@ div.video {
 	@include bp($small){
 		width: 46%;
 		margin-left: 0;
+		margin-right: 4%;
+		display: inline-block;
 	}
 }
 

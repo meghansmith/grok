@@ -448,26 +448,32 @@ section.about {
   z-index: -1;
   margin-top: -50px;
   padding-top: 50px; }
-  @media (min-width: 40.625em) {
-    section.about h3 {
-      margin-top: 44px;
-      margin-bottom: 0; } }
+  section.about h3 {
+    margin-top: 33px; }
+    @media (min-width: 40.625em) {
+      section.about h3 {
+        margin-top: 0px;
+        margin-bottom: 0; } }
+    @media (min-width: 912px) {
+      section.about h3 {
+        margin-top: -39px; } }
 
 div.video {
   text-align: center;
-  margin-top: 44px; }
+  margin-top: 44px;
+  vertical-align: top; }
   @media (min-width: 40.625em) {
     div.video {
       width: 46%;
-      margin-top: 0;
-      position: absolute;
-      right: 0;
-      top: 168px; } }
+      margin-top: 28px;
+      display: inline-block; } }
 
 @media (min-width: 40.625em) {
   .summary {
     width: 46%;
-    margin-left: 0; } }
+    margin-left: 0;
+    margin-right: 4%;
+    display: inline-block; } }
 
 @media (min-width: 40.625em) {
   p.about, p.aboutFirst {
