@@ -52,9 +52,12 @@
 	}
 
 	@include bp($small){
-		width: 48%;
+		width: 46%;
 		height: 22*7px;
 		margin-top: -66px;
+		margin-right: 2%;
+		margin-bottom: 22px;
+
 	}
 	@include bp(825px){
 		margin-top: -22px;
@@ -79,6 +82,7 @@
 	@include bp($small){
 		float: right;
 		margin-top: -22px * 9;
+		margin-right: 2%;
 	}
 
 	@include bp(825px){

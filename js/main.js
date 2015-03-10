@@ -1,69 +1,98 @@
 $(document).ready(function(){
+
+
+
+	var $window   = $( window ),
+		$lastCall = $( ".lastCall" ),
+		$dropOff = $('.dropOff');
 	
 	$(".menuHide").addClass('hide');
-	$('#navButton').click(function(){
-		$(".menuHide").slideToggle('fast');
-	});
-	$('#aboutButton').click(function(){
-		$(".menuHide").slideToggle('fast');
-	});
-	$('#whoButton').click(function(){
-		$(".menuHide").slideToggle('fast');
-	});
-	$('#speakersButton').click(function(){
-		$(".menuHide").slideToggle('fast');
-	});
-	$('#scheduleButton').click(function(){
-		$(".menuHide").slideToggle('fast');
-	});
-	$('#sponsorsButton').click(function(){
+
+	$('#navButton').on( 'mousedown', function( event ){
 		$(".menuHide").slideToggle('fast');
 	});
 
-	$('a').click(function(){
+	$(".menuHide").on( "mousedown", "a", function( event ){
+
+		var $this = $( this ).attr( "href" );
+
 	   $('html, body').animate({
-	       scrollTop: $( $.attr(this, 'href') ).offset().top
+	       scrollTop: $( $this ).offset().top
 	   }, 500);
-	   return false;
-	});
 
-	function parallax() {
-		var scrolled = $(window).scrollTop();
-		//console.log(scrolled);
+	   $(".menuHide").slideToggle('fast');
 
-		// Change background position
-		//$('.lastCall').css({'background-position': '100% ' + -((scrolled-5400) * .25) + 'px'});
+	   event.preventDefault();
+	} );
 
-		// Change position
-		if ($(window).width() >= 875) {
-		   $('.dropOff').css({'bottom': + -((scrolled-5850) * 0.4) + 'px'});
+	$window.on( "scroll" , function( e ){
+
+		var $lCtop      = $lastCall.offset().top,
+			$wscrollTop = $window.scrollTop(),
+			$wnHeight   = $window.height(),
+			$val        = $lCtop - $wscrollTop - $wnHeight;
+
+			console.log ($val);
+
+		if( $val < -10 ){
+			$dropOff.css( { 'top' : $val * -0.43 + 'px' } );
 		}
-		else if ($(window).width() >= 725) {
-		   $('.dropOff').css({'bottom': + -((scrolled-6050) * 0.4) + 'px'});
-		}
-		else if ($(window).width() >= 650) {
-		   $('.dropOff').css({'bottom': + -((scrolled-6250) * 0.4) + 'px'});
-		}
-		else if ($(window).width() >= 535) {
-		   $('.dropOff').css({'bottom': + -((scrolled-8700) * 0.4) + 'px'});
-		}
-		else if ($(window).width() >= 460) {
-		   $('.dropOff').css({'bottom': + -((scrolled-8900) * 0.4) + 'px'});
-		}
-		else if ($(window).width() >= 406) {
-		   $('.dropOff').css({'bottom': + -((scrolled-9150) * 0.4) + 'px'});
-		}
-		else if ($(window).width() >= 360) {
-		   $('.dropOff').css({'bottom': + -((scrolled-9400) * 0.4) + 'px'});
-		}
-		else {
-		   $('.dropOff').css({'bottom': + -((scrolled-9550) * 0.4) + 'px'});
-		}
-	}
+	} );
 
 
-	$(window).scroll(function(){
-		parallax();
-	})
+
+	// $(".menuHide").find('a').click( function( event ){
+
+	// 	var $this = $( this ).attr( "href" );
+
+	// 	console.log( $this );
+
+	//    $('html, body').animate({
+	//        scrollTop: $( $this ).offset().top
+	//    }, 500);
+
+	//    $(".menuHide").slideToggle('fast');
+
+	//    event.preventDefault();
+	// });
+
+
+	
+
+	// function parallax() {
+	// 	var scrolled = $(window).scrollTop();
+	// 	//console.log(scrolled);
+
+	// 	// Change position
+	// 	// if ($(window).width() >= 875) {
+	// 	//    $('.dropOff').css({'bottom': + -((scrolled-5850) * 0.4) + 'px'});
+	// 	// }
+	// 	// else if ($(window).width() >= 725) {
+	// 	//    $('.dropOff').css({'bottom': + -((scrolled-6050) * 0.4) + 'px'});
+	// 	// }
+	// 	// else if ($(window).width() >= 650) {
+	// 	//    $('.dropOff').css({'bottom': + -((scrolled-6250) * 0.4) + 'px'});
+	// 	// }
+	// 	// else if ($(window).width() >= 535) {
+	// 	//    $('.dropOff').css({'bottom': + -((scrolled-8700) * 0.4) + 'px'});
+	// 	// }
+	// 	// else if ($(window).width() >= 460) {
+	// 	//    $('.dropOff').css({'bottom': + -((scrolled-8900) * 0.4) + 'px'});
+	// 	// }
+	// 	// else if ($(window).width() >= 406) {
+	// 	//    $('.dropOff').css({'bottom': + -((scrolled-9150) * 0.4) + 'px'});
+	// 	// }
+	// 	// else if ($(window).width() >= 360) {
+	// 	//    $('.dropOff').css({'bottom': + -((scrolled-9400) * 0.4) + 'px'});
+	// 	// }
+	// 	// else {
+	// 	//    $('.dropOff').css({'bottom': + -((scrolled-9550) * 0.4) + 'px'});
+	// 	// }
+	// }
+
+
+	// $(window).scroll(function(){
+	// 	parallax();
+	// })
 
 });

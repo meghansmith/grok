@@ -526,9 +526,11 @@ div.video {
       height: 99px; } }
   @media (min-width: 40.625em) {
     .whoAttends .image {
-      width: 48%;
+      width: 46%;
       height: 154px;
-      margin-top: -66px; } }
+      margin-top: -66px;
+      margin-right: 2%;
+      margin-bottom: 22px; } }
   @media (min-width: 825px) {
     .whoAttends .image {
       margin-top: -22px; } }
@@ -547,7 +549,8 @@ div.video {
 @media (min-width: 40.625em) {
   .lastQuote {
     float: right;
-    margin-top: -198px; } }
+    margin-top: -198px;
+    margin-right: 2%; } }
 @media (min-width: 825px) {
   .lastQuote {
     margin-top: -110px; } }
@@ -826,7 +829,7 @@ a.facebook {
   .lastCall .dropOff {
     width: 160px;
     position: absolute;
-    bottom: 88px;
+    top: 10px;
     left: 50%;
     margin-left: -210px; }
   .lastCall .human {
