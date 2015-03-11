@@ -56,9 +56,16 @@ header {
 			padding-right: 8px;
 			line-height: 33px;
 			color: $black;
+			transition: all, .3s, ease;
 
 			@include bp($small){
 				padding:10px;
+			}
+
+			@include bp(1025px){
+				&:hover{
+					color: #555;
+				}
 			}
 		}
 		li {
