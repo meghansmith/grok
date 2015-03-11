@@ -76,8 +76,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*html { background-image: url(http://basehold.it/i/22);
-}*/
+html {
+  background-image: url(http://basehold.it/i/22); }
+
 body {
   font-size: 16px;
   line-height: 22px;
@@ -456,6 +457,9 @@ section.about {
       section.about h3 {
         margin-top: 0px;
         margin-bottom: 0; } }
+    @media (min-width: 822px) {
+      section.about h3 {
+        margin-top: 4px; } }
     @media (min-width: 912px) {
       section.about h3 {
         margin-top: -39px; } }
@@ -560,22 +564,19 @@ div.video {
 
 .whoAttends {
   position: relative;
-  z-index: -1;
   margin-top: -50px;
   padding-top: 50px; }
-  .whoAttends .tickets {
-    position: relative;
-    z-index: 10; }
-    @media (min-width: 40.625em) {
-      .whoAttends .tickets {
-        clear: both;
-        margin: 0;
-        padding-top: 20px; } }
-    @media (min-width: 825px) {
-      .whoAttends .tickets {
-        clear: none;
-        margin-top: 42px;
-        padding-top: 0; } }
+  @media (min-width: 40.625em) {
+    .whoAttends .tickets {
+      clear: both;
+      margin: 0;
+      padding-top: 20px; } }
+  @media (min-width: 825px) {
+    .whoAttends .tickets {
+      clear: none;
+      margin-top: 42px;
+      padding-top: 0;
+      margin-bottom: 0px; } }
 
 .speakers > p {
   margin-bottom: 88px; }
@@ -584,17 +585,15 @@ div.video {
       width: 50%;
       margin-bottom: 0; } }
 
-.speakers {
-  z-index: -10;
-  margin-top: -50px;
-  padding-top: 50px; }
-  @media (min-width: 40.625em) {
-    .speakers h2 {
-      margin-top: 66px; } }
+@media (min-width: 40.625em) {
+  .speakers {
+    padding-top: 66px; } }
+@media (min-width: 40.625em) {
+  .speakers h2 {
+    margin-top: 0px; } }
 
 .speaker {
   text-align: center;
-  background-color: #91b173;
   position: relative;
   padding-top: 121px;
   margin-top: 110px;

@@ -91,13 +91,11 @@
 }
 .whoAttends{
 	position: relative;
-	z-index: -1;
 	margin-top: -50px;
 	padding-top: 50px;
 
 	.tickets{
-		position: relative;
-		z-index: 10;
+
 		@include bp($small){
 			clear:both;
 			margin: 0;
@@ -108,6 +106,7 @@
 			clear: none;
 			margin-top: 42px;
 			padding-top: 0;
+			margin-bottom: 0px;
 		}
 	}
 

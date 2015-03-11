@@ -7,12 +7,13 @@
 	}
 }
 .speakers{
-	z-index: -10;
-	margin-top: -50px;
-	padding-top: 50px;
+	@include bp($small){
+		padding-top: 66px;
+	}
 	h2 {
+		
 		@include bp($small){
-			margin-top: 66px;
+			margin-top: 0px;
 		}
 	}
 }
@@ -20,7 +21,7 @@
 
 .speaker {
 	text-align: center;
-	background-color: $mgreen;
+	//background-color: $mgreen;
 	position: relative;
 	padding-top: 121px;
 	margin-top: 110px;

@@ -11,6 +11,9 @@ section.about {
 			margin-top: 0px;
 			margin-bottom: 0;
 		}
+		@include bp(822px){
+			margin-top: 4px;
+		}
 		@include bp(912px){
 			margin-top: -39px;
 		}
