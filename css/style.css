@@ -23,7 +23,7 @@
   text-shadow: none; }
 
 ::selection {
-  background: #57AF05;
+  background: #bbdddb;
   text-shadow: none; }
 
 /*
@@ -149,7 +149,7 @@ div.tickets {
       margin-bottom: -2px;
       text-align: left; }
       div.tickets p {
-        width: 150px;
+        width: 160px;
         display: inline-block;
         text-align: left; } }
 

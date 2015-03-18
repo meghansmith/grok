@@ -27,7 +27,7 @@
 }
 
 ::selection {
-    background: #57AF05;
+    background: #bbdddb;
     text-shadow: none;
 }
 
@@ -167,14 +167,14 @@ p, ul, ol, pre, table, blockquote {
     font-weight: 600;
 
 }
-div.tickets {
+div.tickets { 
     text-align: center;
 
     @include bp($small){
         margin-bottom: -2px;
         text-align: left;
         p{
-            width: 150px;
+            width: 160px;
             display: inline-block;
             text-align: left;
         }
