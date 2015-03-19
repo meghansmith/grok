@@ -828,7 +828,7 @@ a.facebook {
     @media (min-width: 40.625em) {
       .sponsors a img:hover {
         opacity: 1; } }
-  .sponsors .mailChimp img {
+  .sponsors .lighten img {
     opacity: .7; }
 
 .lastCall {
