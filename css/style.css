@@ -634,7 +634,6 @@ div.video {
 
 .schedule {
   position: relative;
-  z-index: -1;
   margin-top: -50px;
   padding-top: 50px; }
 
@@ -770,7 +769,12 @@ a.facebook {
     border-radius: 0;
     border-color: #1a3401;
     background-color: transparent;
-    font-weight: 900; }
+    font-weight: 900;
+    transition: all .4s ease; }
+    @media (min-width: 40.625em) {
+      .email input[type=submit]:hover {
+        background-color: #1a3401;
+        color: #9eb18c; } }
   .email input[placeholder] {
     font-size: 20px;
     font-weight: 200;
@@ -782,7 +786,6 @@ a.facebook {
 .sponsors {
   position: relative;
   margin-bottom: 88px;
-  z-index: -1;
   margin-top: -50px;
   padding-top: 50px; }
   .sponsors p {
@@ -819,6 +822,14 @@ a.facebook {
       .sponsors h3 {
         margin-bottom: 11px;
         margin-top: 33px; } }
+  .sponsors a img {
+    opacity: .8;
+    transition: all .3s ease; }
+    @media (min-width: 40.625em) {
+      .sponsors a img:hover {
+        opacity: 1; } }
+  .sponsors .mailChimp img {
+    opacity: .7; }
 
 .lastCall {
   background-image: url(../images/grok3.jpg);
@@ -866,14 +877,18 @@ footer {
     padding: 0; }
   footer li {
     display: inline-block;
-    font-size: 12px; }
+    font-size: 12px;
+    padding-right: 10px; }
   footer a {
     padding: 11px 10px;
     display: inline-block;
-    line-height: 0px; }
+    line-height: 0px;
+    color: #fff;
+    transition: all .3s ease; }
+    @media (min-width: 40.625em) {
+      footer a:hover {
+        color: #1a3401; } }
   footer li:first-child {
     padding-top: 10px; }
   footer li:last-child {
     padding-bottom: 10px; }
-
-/*# sourceMappingURL=style.css.map */

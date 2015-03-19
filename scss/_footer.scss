@@ -58,13 +58,23 @@ footer {
 	li {
 		display: inline-block;
 		font-size: 12px;
+		padding-right: 10px;
 
 	}
 	a {
 		padding: 11px 10px;
 		display: inline-block;
 		line-height: 0px;
+		color: #fff;
+		transition: all .3s ease;
+		
+		@include bp($med){
+			&:hover{
+				color: $dgreen;
+			}
+		}
 	}
+	
 	li:first-child {
 		padding-top: 10px;
 	}

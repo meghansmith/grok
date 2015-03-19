@@ -1,7 +1,7 @@
 .sponsors {
 	position: relative;
 	margin-bottom: 88px;
-	z-index: -1;
+
 	margin-top: -50px;
 	padding-top: 50px;
 	p {
@@ -47,6 +47,19 @@
 			margin-bottom: 11px;
 			margin-top: 33px;
 		}
+	}
+	a img{
+		opacity: .8;
+		transition: all .3s ease;
+
+		@include bp($med){
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+	.mailChimp img{
+		opacity: .7;
 	}
 
 }
