@@ -845,7 +845,8 @@ a.facebook {
   .lastCall p.location {
     margin-top: 0px;
     font-size: 26px;
-    font-weight: 700; }
+    font-weight: 700;
+    text-shadow: 0 0 5px #fff; }
   .lastCall .dropOff {
     width: 160px;
     position: absolute;
